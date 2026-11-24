@@ -1,0 +1,63 @@
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    background: #f2f4f7;
+    color: #1f2937;
+}
+
+.pagina { display: flex; justify-content: center; padding: 32px 16px; }
+
+.card {
+    width: 100%;
+    max-width: 560px;
+    background: #fff;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+h1 { margin-top: 0; }
+
+form { display: flex; gap: 8px; }
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+button {
+    padding: 10px 14px;
+    border: 0;
+    border-radius: 8px;
+    background: #2563eb;
+    color: #fff;
+    cursor: pointer;
+    font-size: 0.95rem;
+}
+button:hover { opacity: 0.9; }
+
+#lista-categorias { list-style: none; padding: 0; margin: 0; }
+#lista-categorias li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    padding: 10px 0;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.categoria-id { color: #6b7280; margin-right: 8px; }
+.categoria-acoes { display: flex; gap: 6px; }
+.btn-editar { background: #f59e0b; }
+.btn-excluir { background: #dc2626; }
+.btn-salvar { background: #16a34a; }
+.btn-cancelar { background: #6b7280; }
+.input-edicao { flex: 1; }
+.lista-vazia { color: #6b7280; }
+
+.mensagem-sucesso { color: #16a34a; }
+.mensagem-erro { color: #dc2626; }

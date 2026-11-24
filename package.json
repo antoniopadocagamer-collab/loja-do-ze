@@ -1,13 +1,18 @@
 {
-  "name": "json",
+  "name": "loja-do-ze",
   "version": "1.0.0",
-  "description": "",
+  "description": "Loja do Zé - cadastro de categorias (Vercel + Neon)",
   "license": "ISC",
-  "author": "",
   "type": "commonjs",
-  "main": "app.js",
+  "engines": {
+    "node": ">=20"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "dev": "node server.js",
+    "db:setup": "node scripts/criar-tabelas.js"
+  },
+  "dependencies": {
+    "@neondatabase/serverless": "^1.0.0"
   }
 }
